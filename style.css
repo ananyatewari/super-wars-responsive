@@ -1,0 +1,81 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+section#main-container{
+    display: flex;
+    justify-content: center;
+}
+
+section#heroes, section#villains{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 30px;
+}
+
+section#heroes div.hero-card, section#villains div.villain-card{
+    margin-top: 20px;
+    margin-left: 16px;
+    padding: 20px;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+section#heroes div.hero-card:hover, section#villains div.villain-card:hover{
+    box-shadow: 10px 10px 8px gray;
+}
+
+section div.name{
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+section div.score{
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+section#score-section{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+    font-family: 'Lucida Sans';
+}
+
+.footer{
+    margin-top: 10px;
+    margin-right : 60px;
+    font-size : 18px;
+    float: right;
+}
+
+@media (max-width: 1500px){
+    section#heroes, section#villains{
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 700px){
+    section#heroes, section#villains{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin: 4px;
+    }
+    section#heroes div.hero-card, section#villains div.villain-card{
+        margin: 2px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 800){
+    section#heroes, section#villains{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
