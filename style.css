@@ -16,6 +16,10 @@ section#heroes, section#villains{
     margin: 30px;
 }
 
+#vader{
+    grid-column: 3;
+}
+
 section#heroes div.hero-card, section#villains div.villain-card{
     margin-top: 20px;
     margin-left: 16px;
